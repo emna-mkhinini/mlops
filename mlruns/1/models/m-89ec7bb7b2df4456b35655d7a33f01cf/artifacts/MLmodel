@@ -1,0 +1,33 @@
+artifact_path: file:C:/MLOps/tp1/mlruns/1/models/m-89ec7bb7b2df4456b35655d7a33f01cf/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.17.1
+model_id: m-89ec7bb7b2df4456b35655d7a33f01cf
+model_size_bytes: 279429
+model_uuid: m-89ec7bb7b2df4456b35655d7a33f01cf
+prompts: null
+run_id: 4d182858d59c48c4ae84697e1f46a51e
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "long", "name":
+    "salaire", "required": true}, {"type": "long", "name": "anciennete", "required":
+    true}, {"type": "long", "name": "consommation", "required": true}, {"type": "boolean",
+    "name": "abonnement_Premium", "required": true}, {"type": "boolean", "name": "abonnement_Standard",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-20 11:39:29.748433'
